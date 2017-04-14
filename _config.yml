@@ -70,4 +70,5 @@ theme: hexo-theme-spfk
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:xinghen001/blog.git, master
+  repo: git@github.com:xinghen001/blog.git
+  branch: master
