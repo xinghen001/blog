@@ -3,16 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
+title: my blog
+subtitle: no zuo no die
 description:
-author: John Doe
-language:
+author: xinghen
+language: zh_CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://yoursite.com
+#url: http://118.89.239.143:9999
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -68,4 +69,5 @@ theme: hexo-theme-spfk
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: git@github.com:xinghen001/blog.git, master
