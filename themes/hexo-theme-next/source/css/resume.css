@@ -1,0 +1,358 @@
+
+@media (max-width: 600px){
+	.find-job-card {
+		display: none !important;
+	}
+}
+
+.find-job-card {
+	-webkit-transform:translateY(200px) translateZ(0);
+	-moz-transform:translateY(200px) translateZ(0);
+	-o-transform:translateY(200px) translateZ(0);
+	-ms-transform:translateY(200px) translateZ(0);
+	transform:translateY(200px) translateZ(0);
+	-webkit-transition:-webkit-transform .3s;
+	-moz-transition:-moz-transform .3s;
+	-o-transition:-o-transform .3s;
+	-ms-transition:-ms-transform .3s;
+	transition:transform .3s;
+	z-index:999;
+	position:fixed;
+	left:16px;
+	bottom:16px;
+	text-align:center;
+	color:#fff
+}
+.find-job-card.active {
+	-webkit-transform:translateY(0) translateZ(0);
+	-moz-transform:translateY(0) translateZ(0);
+	-o-transform:translateY(0) translateZ(0);
+	-ms-transform:translateY(0) translateZ(0);
+	transform:translateY(0) translateZ(0)
+}
+.find-job-card.active .avatar {
+	-webkit-animation:zoomIn .3s .3s both ease-out;
+	-moz-animation:zoomIn .3s .3s both ease-out;
+	-o-animation:zoomIn .3s .3s both ease-out;
+	-ms-animation:zoomIn .3s .3s both ease-out;
+	animation:zoomIn .3s .3s both ease-out
+}
+.find-job-card.active p {
+	-webkit-animation:slideDown .3s .5s both ease-out;
+	-moz-animation:slideDown .3s .5s both ease-out;
+	-o-animation:slideDown .3s .5s both ease-out;
+	-ms-animation:slideDown .3s .5s both ease-out;
+	animation:slideDown .3s .5s both ease-out
+}
+.find-job-card.active .find-job-btn {
+	-webkit-transform-origin:50% 0;
+	-moz-transform-origin:50% 0;
+	-o-transform-origin:50% 0;
+	-ms-transform-origin:50% 0;
+	transform-origin:50% 0;
+	-webkit-animation:showBtn .3s .8s both ease-out;
+	-moz-animation:showBtn .3s .8s both ease-out;
+	-o-animation:showBtn .3s .8s both ease-out;
+	-ms-animation:showBtn .3s .8s both ease-out;
+	animation:showBtn .3s .8s both ease-out
+}
+@media screen and (max-width:400px) {
+	.find-job-card {
+	left:16px;
+	margin:auto;
+	max-width:310px
+}
+}.find-job-card p {
+	margin-bottom:0
+}
+.find-job-card .card-wrapper {
+	position:relative;
+	-webkit-box-shadow:0 0 0 .67px rgba(118,138,178,.3),0 1.67px 4px 0 rgba(0,0,0,.2);
+	box-shadow:0 0 0 .67px rgba(118,138,178,.3),0 1.67px 4px 0 rgba(0,0,0,.2);
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	background:#34363c;
+	padding:45px 16px 6px
+}
+.find-job-card .find-job-btn {
+	display:block;
+	margin:10px auto 8px;
+	text-align:center;
+	color:#34363c;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	width:160px;
+  background-color: #fff;
+	text-decoration:none;
+	line-height:32px
+}
+.find-job-card .avatar {
+	position:absolute;
+	margin-top:-40px;
+	margin-left:-40px;
+	left:50%;
+	top:0;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	-webkit-box-shadow:0 0 0 .67px rgba(118,138,178,.3),0 1.67px 4px 0 rgba(0,0,0,.2);
+	box-shadow:0 0 0 .67px rgba(118,138,178,.3),0 1.67px 4px 0 rgba(0,0,0,.2);
+	width:80px;
+	height:80px;
+	opacity:0;
+	filter:alpha(opacity=0)
+}
+@-moz-keyframes zoomIn {
+	0% {
+	opacity:.2;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+	filter:alpha(opacity=20);
+	-webkit-transform:scale(0);
+	-moz-transform:scale(0);
+	-o-transform:scale(0);
+	-ms-transform:scale(0);
+	transform:scale(0)
+}
+100% {
+	opacity:1;
+	-ms-filter:none;
+	filter:none;
+	-webkit-transform:scale(1);
+	-moz-transform:scale(1);
+	-o-transform:scale(1);
+	-ms-transform:scale(1);
+	transform:scale(1)
+}
+}@-webkit-keyframes zoomIn {
+	0% {
+	opacity:.2;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+	filter:alpha(opacity=20);
+	-webkit-transform:scale(0);
+	-moz-transform:scale(0);
+	-o-transform:scale(0);
+	-ms-transform:scale(0);
+	transform:scale(0)
+}
+100% {
+	opacity:1;
+	-ms-filter:none;
+	filter:none;
+	-webkit-transform:scale(1);
+	-moz-transform:scale(1);
+	-o-transform:scale(1);
+	-ms-transform:scale(1);
+	transform:scale(1)
+}
+}@-o-keyframes zoomIn {
+	0% {
+	opacity:.2;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+	filter:alpha(opacity=20);
+	-webkit-transform:scale(0);
+	-moz-transform:scale(0);
+	-o-transform:scale(0);
+	-ms-transform:scale(0);
+	transform:scale(0)
+}
+100% {
+	opacity:1;
+	-ms-filter:none;
+	filter:none;
+	-webkit-transform:scale(1);
+	-moz-transform:scale(1);
+	-o-transform:scale(1);
+	-ms-transform:scale(1);
+	transform:scale(1)
+}
+}@keyframes zoomIn {
+	0% {
+	opacity:.2;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+	filter:alpha(opacity=20);
+	-webkit-transform:scale(0);
+	-moz-transform:scale(0);
+	-o-transform:scale(0);
+	-ms-transform:scale(0);
+	transform:scale(0)
+}
+100% {
+	opacity:1;
+	-ms-filter:none;
+	filter:none;
+	-webkit-transform:scale(1);
+	-moz-transform:scale(1);
+	-o-transform:scale(1);
+	-ms-transform:scale(1);
+	transform:scale(1)
+}
+}@-moz-keyframes slideDown {
+	0% {
+	opacity:0;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter:alpha(opacity=0);
+	-webkit-transform:translate3d(0,-100%,0);
+	-moz-transform:translate3d(0,-100%,0);
+	-o-transform:translate3d(0,-100%,0);
+	-ms-transform:translate3d(0,-100%,0);
+	transform:translate3d(0,-100%,0)
+}
+100% {
+	opacity:1;
+	-ms-filter:none;
+	filter:none;
+	-webkit-transform:translate3d(0,0,0);
+	-moz-transform:translate3d(0,0,0);
+	-o-transform:translate3d(0,0,0);
+	-ms-transform:translate3d(0,0,0);
+	transform:translate3d(0,0,0)
+}
+}@-webkit-keyframes slideDown {
+	0% {
+	opacity:0;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter:alpha(opacity=0);
+	-webkit-transform:translate3d(0,-100%,0);
+	-moz-transform:translate3d(0,-100%,0);
+	-o-transform:translate3d(0,-100%,0);
+	-ms-transform:translate3d(0,-100%,0);
+	transform:translate3d(0,-100%,0)
+}
+100% {
+	opacity:1;
+	-ms-filter:none;
+	filter:none;
+	-webkit-transform:translate3d(0,0,0);
+	-moz-transform:translate3d(0,0,0);
+	-o-transform:translate3d(0,0,0);
+	-ms-transform:translate3d(0,0,0);
+	transform:translate3d(0,0,0)
+}
+}@-o-keyframes slideDown {
+	0% {
+	opacity:0;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter:alpha(opacity=0);
+	-webkit-transform:translate3d(0,-100%,0);
+	-moz-transform:translate3d(0,-100%,0);
+	-o-transform:translate3d(0,-100%,0);
+	-ms-transform:translate3d(0,-100%,0);
+	transform:translate3d(0,-100%,0)
+}
+100% {
+	opacity:1;
+	-ms-filter:none;
+	filter:none;
+	-webkit-transform:translate3d(0,0,0);
+	-moz-transform:translate3d(0,0,0);
+	-o-transform:translate3d(0,0,0);
+	-ms-transform:translate3d(0,0,0);
+	transform:translate3d(0,0,0)
+}
+}@keyframes slideDown {
+	0% {
+	opacity:0;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter:alpha(opacity=0);
+	-webkit-transform:translate3d(0,-100%,0);
+	-moz-transform:translate3d(0,-100%,0);
+	-o-transform:translate3d(0,-100%,0);
+	-ms-transform:translate3d(0,-100%,0);
+	transform:translate3d(0,-100%,0)
+}
+100% {
+	opacity:1;
+	-ms-filter:none;
+	filter:none;
+	-webkit-transform:translate3d(0,0,0);
+	-moz-transform:translate3d(0,0,0);
+	-o-transform:translate3d(0,0,0);
+	-ms-transform:translate3d(0,0,0);
+	transform:translate3d(0,0,0)
+}
+}@-moz-keyframes showBtn {
+	0% {
+	opacity:0;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter:alpha(opacity=0);
+	-webkit-transform:scaleY(0);
+	-moz-transform:scaleY(0);
+	-o-transform:scaleY(0);
+	-ms-transform:scaleY(0);
+	transform:scaleY(0)
+}
+100% {
+	opacity:1;
+	-ms-filter:none;
+	filter:none;
+	-webkit-transform:scaleY(1);
+	-moz-transform:scaleY(1);
+	-o-transform:scaleY(1);
+	-ms-transform:scaleY(1);
+	transform:scaleY(1)
+}
+}@-webkit-keyframes showBtn {
+	0% {
+	opacity:0;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter:alpha(opacity=0);
+	-webkit-transform:scaleY(0);
+	-moz-transform:scaleY(0);
+	-o-transform:scaleY(0);
+	-ms-transform:scaleY(0);
+	transform:scaleY(0)
+}
+100% {
+	opacity:1;
+	-ms-filter:none;
+	filter:none;
+	-webkit-transform:scaleY(1);
+	-moz-transform:scaleY(1);
+	-o-transform:scaleY(1);
+	-ms-transform:scaleY(1);
+	transform:scaleY(1)
+}
+}@-o-keyframes showBtn {
+	0% {
+	opacity:0;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter:alpha(opacity=0);
+	-webkit-transform:scaleY(0);
+	-moz-transform:scaleY(0);
+	-o-transform:scaleY(0);
+	-ms-transform:scaleY(0);
+	transform:scaleY(0)
+}
+100% {
+	opacity:1;
+	-ms-filter:none;
+	filter:none;
+	-webkit-transform:scaleY(1);
+	-moz-transform:scaleY(1);
+	-o-transform:scaleY(1);
+	-ms-transform:scaleY(1);
+	transform:scaleY(1)
+}
+}@keyframes showBtn {
+	0% {
+	opacity:0;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter:alpha(opacity=0);
+	-webkit-transform:scaleY(0);
+	-moz-transform:scaleY(0);
+	-o-transform:scaleY(0);
+	-ms-transform:scaleY(0);
+	transform:scaleY(0)
+}
+100% {
+	opacity:1;
+	-ms-filter:none;
+	filter:none;
+	-webkit-transform:scaleY(1);
+	-moz-transform:scaleY(1);
+	-o-transform:scaleY(1);
+	-ms-transform:scaleY(1);
+	transform:scaleY(1)
+}
+}
+
+
